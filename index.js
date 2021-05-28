@@ -26,12 +26,26 @@ let persons = [
   },
 ];
 
+let info = [
+  {
+    personsLength: persons.length,
+    requestTime: new Date().toString(),
+  },
+];
+
 app.get("/", (request, response) => {
   response.send("<h1>Nyeah eh</h1>");
 });
 
 app.get("/api/persons", (request, response) => {
   response.json(persons);
+});
+
+app.get("/api/info", (request, response) => {
+  response.send(
+    `<p>Phonebook has info for ${info[0].personsLength} people</p>
+    <p>${info[0].requestTime}</p>`
+  );
 });
 
 app.get("/api/persons/:id", (request, response) => {
