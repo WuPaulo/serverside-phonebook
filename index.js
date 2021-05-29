@@ -35,7 +35,7 @@ let info = [
 ];
 
 app.get("/", (request, response) => {
-  response.send("<h1>Nyeah eh</h1>");
+  response.send("<h1>Phonebook</h1>");
 });
 
 app.get("/api/persons", (request, response) => {
