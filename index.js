@@ -1,4 +1,5 @@
 const express = require("express");
+const baseUrl = "http://localhost:3001/api/persons";
 const app = express();
 var morgan = require("morgan");
 const cors = require("cors");
