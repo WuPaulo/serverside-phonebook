@@ -2,6 +2,6 @@ POST http://localhost:3001/api/persons
 content-type: application/json
 
  {
-    "name": "asdasdadss",
-    "number" : 121211213113
+    "content":"vs code rest client",
+    "important":true
  }
