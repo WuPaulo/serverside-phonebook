@@ -1,10 +1,11 @@
 const express = require("express");
-const baseUrl = "http://localhost:3001/api/persons";
+const baseUrl = "/api/persons";
 const app = express();
 var morgan = require("morgan");
 const cors = require("cors");
 
 app.use(express.json());
+app.use(express.static("build"));
 app.use(cors());
 
 let persons = [
